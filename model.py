@@ -82,8 +82,8 @@ class Product(Base):
     orders = relationship("OrdersAssociation", back_populates="product")
     shoppingCarts = relationship("ShoppingCartAssociation", back_populates="product")
 
-#engine = create_engine('sqlite:///fizzBuzz.db')
-engine = create_engine('postgres://dcksenyhfyqqkm:bdce4b8ad60ef235a6f074e5c5b27c5d1f3e2bbaa078cf8fe3d9f9fe7f84f635@ec2-23-23-223-2.compute-1.amazonaws.com:5432/d5tc1uq8kg2535')
+engine = create_engine('sqlite:///fizzBuzz.db')
+#engine = create_engine('postgres://dcksenyhfyqqkm:bdce4b8ad60ef235a6f074e5c5b27c5d1f3e2bbaa078cf8fe3d9f9fe7f84f635@ec2-23-23-223-2.compute-1.amazonaws.com:5432/d5tc1uq8kg2535')
 
 
 
